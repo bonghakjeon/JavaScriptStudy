@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // [자바스크립트 중급] 스터디
+        // 1강 변수, 호이스팅, TDZ(Temporal Dead Zone)
+        // 유튜브 참고 URL - 
+        // https://youtu.be/ocGc-AmWSnQ?si=3vLzJqwZceTmhC2h
+
+        // var - 함수 스코프(function-scoped)
+        // let, const - 블록 스코프(block-scoped)
+        const age = 30;
+
+        // if문 안에서 선언한 변수 var txt는 if문 밖에서도 사용 가능 
+        // 단, let과 const는 if문 밖에서는 사용 불가능 
+        if(age>19) { var txt = '성인'; }
+
+        console.log(txt); // '성인'
+    </script>
+</body>
+</html>
