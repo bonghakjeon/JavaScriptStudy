@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // [자바스크립트 기초] 스터디
+        // 4강 형변환
+        // 유튜브 참고 URL - 
+        // https://youtu.be/yib1zeYEQkQ?si=qdbEdmP8F0Zd754w
+
+        // Boolean 형변환
+        // console.log 출력 결과 1 - true, true, true
+        // true - 0, "", null, undefined, NaN 제외한 나머지 형태 
+        console.log(
+            Boolean(1),
+            Boolean(123),
+            Boolean("javascript")
+        );
+
+        // console.log 출력 결과 2 - false, false, false, false, false
+        // false - 0, "", null, undefined, NaN 형태 
+        console.log(
+            Boolean(0),
+            Boolean(""),
+            Boolean(null),
+            Boolean(undefined),
+            Boolean(NaN)
+        );
+
+        // console.log 출력 결과 3 - false, true, false, true
+        console.log(
+            Boolean(0),
+            Boolean('0'),
+            Boolean(''),
+            Boolean(' ') 
+        );
+        
+    </script>
+</body>
+</html>
