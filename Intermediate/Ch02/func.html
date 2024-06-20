@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // [자바스크립트 중급] 스터디
+        // 2강 생성자 함수
+        // 유튜브 참고 URL - 
+        // https://youtu.be/8hrSkOihmBI?si=1LSjz5loGCssYPr3
+
+        // 생성자 함수 : 상품 객체를 생성해보자.
+        
+        // 생성자 함수 Item
+        function Item(title, price) {
+            // 아래 주석친 코드는 실제 작성하지 않아도 
+            // 생성자 함수 Item 호출하여 객체 생성시(new) 자동 실행 됨. 
+            // this = {}   // 빈 객체(this) 생성
+            this.title = title;
+            this.price = price;
+
+            // 메서드 showPrice 만들기 
+            this.showPrice = function() {
+                console.log(`가격은 ${price}원 입니다.`);
+            }
+
+            // return this;
+        }
+
+        const item1 = new Item('인형', 3000);
+        const item2 = new Item('가방', 4000);
+        const item3 = new Item('지갑', 9000);
+
+        // 아래 주석친 코드 처럼 생성자 함수 Item 호출시 키워드 new를 안 붙이면 
+        // 객체가 생성되는 것이 아니라 함수 Item이 실행 된다. 
+        // 따라서 아무런 값도 반환되지 않아 결과값은 undefined가 된다.
+        // const item4 = Item('가위', 5000);
+
+        // console.log(item1, item2, item3, item4);
+
+        console.log(item1, item2, item3);
+
+        item3.showPrice();
+    </script>
+</body>
+</html>
